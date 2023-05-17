@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Générateur de QRCode</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+
+<h1> Générateur de QRCode</h1>
+<img src ="https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=https://www.youtube.com/watch?v=ZZ5LpwO-An4" alt=""/>
+
+<div class="container">
+	<input type="text" placeholder="Insérer le lien du site">
+	<button>Générer</button>
+      </div>
+
+
+<script>
+	const image = document.querySelector("img"),
+	input = document.querySelector("input"),
+	button = document.querySelector("button"),
+	api = 'https://api.qrserver.com/v1/'
+	api2 = 'create-qr-code/?size=320x320&data=';
+
+	button.addEventListener('click', () => {
+	image.src = api + api2 + input.value;
+		
+	button.classList.add('color-change-animation');
+
+	setTimeout(() => {
+    button.classList.remove('color-change-animation');
+  }, 1000);
+	});
+
+</script>
+	
+</body>
+<footer>
+<p>Made by Lovis - <a href="https://github.com/LovisTheG">GitHub</a> </p>
+</footer>
+</html>
