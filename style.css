@@ -12,7 +12,7 @@ h1 {
 img {
 	display: block;
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 70%;
 	margin-top: 80px;
       }
       
@@ -68,7 +68,7 @@ footer
 {
 	background-color: #333;
 	color: #fff;
-	padding: 20px;
+	padding: 10px;
 	text-align: center;
 	position: fixed;
 	bottom: 0;
