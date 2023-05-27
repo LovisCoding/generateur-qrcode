@@ -1,4 +1,4 @@
-# Site pour générer les QRCODES
+# Site pour générer des QRCODES
 
 ## Utilisation de l'api de qrserver.com
 
